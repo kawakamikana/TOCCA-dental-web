@@ -1,0 +1,15 @@
+@import "./module/**";
+@import "./setting/**";
+
+// 各templateのheader、footer
+/* @import "./layout/layoutA"; */
+@import "./layout/layoutL";
+@import "./layout/content";
+
+// 各templateデザイン
+@import "./templates/_template-A";
+/* @import "./templates/_template-luxury"; */
+@import "./page/**";
+/* @import "utility/**"; */
+
+//テンプレートで読まないものはコメントアウトしてcss出力

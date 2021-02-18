@@ -1,0 +1,154 @@
+.h3-txt {
+  text-align: left;
+}
+
+/*subpage*/
+.main-content {
+  max-width: 1000px;
+  width: 100%;
+  @include mq(pc) {
+    margin: 4em auto;
+  }
+}
+
+.doctor {
+  p {
+    margin-bottom: initial;
+  }
+  @include mq(sp) {
+    padding-top: 30px;
+  }
+}
+
+.content-col2--text-right {
+  .contents-img {
+    @include mq(sp) {
+      order: 2;
+    }
+  }
+  .contents-text {
+    @include mq(sp) {
+      order: 1;
+    }
+  }
+}
+
+.contents-img {
+  @include mq(sp) {
+    display: grid;
+    justify-content: center;
+  }
+}
+
+.interview {
+  p {
+    @include justify();
+    margin-bottom: initial;
+  }
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.profileBox {
+  ul {
+    padding: 1.5rem 0;
+  }
+}
+
+.icon {
+  line-height: 1.4;
+  padding-left: 1.2em;
+  position: relative;
+  &:before {
+    color: $color-main;
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-size: 1em;
+    left: 0;
+    position: absolute;
+    top: 0.1em;
+  }
+}
+
+.col-2 {
+  .staff-text {
+    padding-bottom: 56px;
+  }
+}
+
+.job-offerBox {
+  @include mq(pc) {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.job-icon {
+    margin-top: 3rem;
+  line-height: 1.4;
+  padding-left: 1.2em;
+  position: relative;
+  margin-bottom: 30px;
+  &:before {
+    color: $color-main;
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-size: 1em;
+    left: 0;
+    position: absolute;
+    top: 0.1em;
+  }
+}
+
+.job-list {
+  background: none;
+  color: $color-main;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.job {
+  p {
+    color: $color-main;
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding-top: 2rem;
+  }
+  .time {
+    border-top: 1px solid $color-main;
+    color: $color-main;
+    line-height: 1.8;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 10px 0 0;
+    width: 100%;
+    dd {
+        border-bottom: 1px solid $color-main;
+        color:$color-b;
+        margin: 0 0 1rem;
+        padding: 0 5px 10px 13em;
+        position: relative;
+        text-align: left;
+    }
+    dt {
+        float: left;
+        margin: 0;
+        padding: 0 0 0 0.5rem;
+        width: 7em;
+    }
+  }
+}
+
+.employment{
+    padding-top: 2rem;
+    .icon{
+        margin-bottom: initial;
+    }
+}

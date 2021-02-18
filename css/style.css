@@ -1,0 +1,1433 @@
+/* $color-main:#715f5f;
+$color-sub: #dbcaaa;
+$color-bg: #fff6ec; */
+
+/* $color-th-bg: #fae0c9;
+$color-accent: #fff700; */
+
+.content-col2--text-right {
+	display: grid;
+}
+
+.form-body {
+	background-color: #f5f5f5;
+	border-color: #faebcc;
+	color: #32b4b9;
+	font-size: 14px;
+	padding: 20px;
+}
+
+.form-body p {
+	margin-bottom: 20px;
+}
+
+.form-body h3 {
+	font-size: 16px;
+	font-size: 1.6rem;
+	text-align: left;
+}
+
+.form-body .g-recaptcha {
+	text-align: center;
+}
+
+.form-body input,
+.form-body select {
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	line-height: 1.2;
+	padding: 8px;
+	width: auto;
+}
+
+.form-body input.submit_button {
+	background-color: #333;
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	height: 48px;
+	line-height: 1.5;
+	margin: 30px auto 0;
+	outline: none;
+	position: relative;
+	transition: all 0.3s;
+	width: 225px;
+}
+
+.form-body textarea {
+	width: 100%;
+}
+
+.ui-datepicker {
+	background-color: #fff;
+}
+
+.ui-datepicker-header {
+	background-color: #726250;
+	padding: 15px 10px;
+}
+
+.ui-datepicker-header a {
+	color: #fff;
+}
+
+.ui-datepicker-header a:hover {
+	color: #0a7f86;
+}
+
+.ui-datepicker-prev {
+	float: left;
+}
+
+.ui-datepicker-next {
+	float: right;
+}
+
+.ui-datepicker-title {
+	color: #fff;
+	padding: 0 30px;
+	text-align: center;
+}
+
+.ui-datepicker-calendar {
+	border-collapse: unset;
+	border-spacing: 3px;
+	color: #726250;
+	padding: 0.5em;
+	text-align: center;
+}
+
+.ui-datepicker-calendar thead {
+	font-weight: bold;
+}
+
+.ui-datepicker-calendar thead th {
+	padding: 0.5em 0;
+}
+
+.ui-datepicker-calendar td {
+	border: none;
+	padding: 0;
+}
+
+.ui-datepicker-calendar a {
+	color: #726250;
+	display: block;
+	padding: 0.5em;
+}
+
+.ui-datepicker-calendar a:hover {
+	background-color: #726250;
+	color: #fff;
+}
+
+.ui-datepicker-header:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+	src: local("Noto Sans CJK JP"), url(http://fonts.googleapis.com/earlyaccess/notosansjp.css) format("woff");
+	font-family: "Noto Sans JP";
+	font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%; /* 16px x 0.625 = 10px(=1rem) */
+}
+
+body {
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	display: flex;
+	flex-direction: column; /* 16px */ /*font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "メイリオ",Meiryo;*/
+	font-family: "Noto Sans JP", "Noto Sans Japanese", sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.8;
+	min-height: 100vh;
+	min-height: 100%;
+	text-size-adjust: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #32b4b9;
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+h2:first-of-type {
+	margin-bottom: 32px;
+	padding-top: initial;
+}
+
+h2 {
+	margin: auto;
+	margin-bottom: 32px;
+	padding-top: 32px;
+	text-align: left;
+}
+
+h3 {
+	color: #32b4b9;
+	font-size: 26px;
+	font-size: 2.6rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+h4 {
+	color: #32b4b9;
+	margin: auto;
+	margin-bottom: 16px;
+	text-align: center;
+	text-align: left;
+}
+
+p {
+	line-height: 2;
+	margin: auto;
+	margin-bottom: 32px;
+}
+
+section {
+	padding: 16px;
+}
+
+.layout {
+	padding: 16px;
+}
+
+.title {
+	padding: 16px;
+}
+
+/*subpage*/
+
+.h2-title {
+	border-bottom: solid 3px #32b4b9;
+	color: #32b4b9;
+	font-size: 30px;
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-bottom: 0 !important;
+}
+
+.h3-title {
+	background: transparent;
+	border-left: solid 5px #32b4b9;
+	color: #404040;
+	font-size: 24px;
+	font-size: 2.4rem;
+	margin: 0.5rem 0 1rem 0;
+	margin-top: 0;
+	padding: 0 0 0 0.5em;
+	text-align: left;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.large {
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+.text-green {
+	color: #0a7f86;
+}
+
+.text-orange {
+	color: #32b4b9;
+}
+
+/* @import "./layout/layoutA"; */
+
+header {
+	gap: 10px;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr;
+}
+
+#global-nav li a:after {
+	color: #fff;
+}
+
+#global-nav li {
+	border-left: 1px solid transparent;
+}
+
+#topBtn {
+	background-color: #32b4b9;
+	border-radius: 30px;
+	bottom: -10px;
+	box-sizing: border-box;
+	color: #fff;
+	display: block;
+	height: 60px;
+	line-height: 38px;
+	padding-top: 30px;
+	position: fixed;
+	right: 20px;
+	text-align: center;
+	text-decoration: none;
+	width: 60px;
+	z-index: 9999;
+}
+
+#topBtn:before {
+	content: "top";
+	left: 0;
+	position: absolute;
+	top: 10px;
+	width: 100%;
+}
+
+#topBtn:hover {
+	opacity: 0.8;
+}
+
+#header_inner {
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-areas: "logo reservation . ." "logo reservation . ." "logo reservation . .";
+	grid-template-columns: 2fr 1fr; /*   gap: 10px; */
+	padding: 0 5px 0 5px;
+}
+
+#header_inner .logo {
+	grid-area: logo;
+}
+
+#header_inner .reservation {
+	grid-area: reservation;
+}
+
+.logo {
+	align-self: end;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+
+.logo p {
+	display: none;
+}
+
+.logo img {
+	width: auto;
+}
+
+.header-holiday {
+	color: #ec5b19;
+	display: block;
+	text-align: center;
+}
+
+.fa-phone {
+	background: #f1f2f4;
+	border-radius: 25px;
+	color: #32b4b9;
+	display: block;
+	padding: 6px;
+}
+
+.information {
+	grid-column: 1 / 3;
+	justify-self: center; /*   grid-row: 2 / 2; */
+}
+
+.reservation {
+	justify-self: center;
+}
+
+.reservation span {
+	background-color: #32b4b9;
+	border-radius: 25px;
+	text-align: center;
+}
+
+.reservation a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	font-size: 1.2rem;
+	padding: 6px;
+}
+
+#global-nav {
+	margin: auto;
+	max-width: 1000px;
+	width: 100%;
+}
+
+#global-nav ul {
+	background: #32b4b9;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#global-nav ul li {
+	flex-basis: 50%;
+	flex-grow: 1;
+}
+
+#global-nav ul li a {
+	color: #fff;
+	display: block;
+	padding: 0.7rem;
+}
+
+#global-nav ul li a:after {
+	color: #fff;
+	content: attr(title);
+	display: block;
+	font-size: 10px;
+	font-size: 1rem;
+	padding-top: 0.3rem;
+	text-align: center;
+}
+
+#global-nav li {
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	text-align: center;
+}
+
+#global-nav li + li {
+	border-bottom: 1px solid #fff;
+	border-left: 0;
+	border-right: 1px solid #fff;
+}
+
+footer {
+	gap: 10px;
+	background: #32b4b9;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr;
+}
+
+footer .footer_inner {
+	align-items: center;
+	color: #fff;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr;
+	padding: 0 16px 0;
+}
+
+footer .footer_inner .footer-logo p {
+	margin-bottom: 0;
+	padding-top: 15px;
+}
+
+footer .footer-info {
+	align-items: center;
+	background: #fff;
+	color: #32b4b9;
+	display: grid;
+	grid-auto-rows: 50px;
+	grid-template-columns: 1fr 50px 2fr;
+	justify-items: center;
+	margin: 25px 0 25px;
+}
+
+footer .footer-info .fa-phone {
+	background: none;
+	border-radius: 0;
+	color: #32b4b9;
+	display: block;
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+footer .footer-info .footer-yoyaku {
+	background-color: #32b4b9;
+	border-radius: 25px;
+	color: #fff;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin: initial;
+	margin-bottom: initial;
+	text-align: center;
+	width: 6rem;
+}
+
+footer .footer-info-time,
+footer .footer-holiday {
+	display: none;
+}
+
+/* 
+  .footer-info-3--holiday{
+      color: $color-warning;
+    } */
+
+.footer-nav li {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	text-align: center;
+}
+
+.footer-nav li + li {
+	border-left: 0;
+	border-right: 1px solid #fff;
+}
+
+.footer-nav {
+	display: none;
+}
+
+.footer-nav ul li > a {
+	color: #fff;
+}
+
+small {
+	background: #0a7f86;
+	color: #fff;
+	display: block;
+	padding: 1rem;
+	text-align: center;
+}
+
+.news-list--item {
+	border-top: 1px solid #32b4b9;
+	color: #32b4b9;
+	line-height: 1.8;
+	margin: 0.5rem 0 0.5rem 0;
+	padding: 10px 0 0;
+	width: 100%;
+}
+
+.news-list--item dt {
+	float: left;
+	margin: 0;
+	padding: 0 0 0 0.5rem;
+	width: 7em;
+}
+
+.news-list--item dd {
+	border-bottom: 1px solid #32b4b9;
+	color: #000;
+	margin: 0 0 1rem;
+	padding: 0 5px 10px 13em;
+	position: relative;
+	text-align: left;
+}
+
+.cat {
+	background: #32b4b9;
+	border-radius: 25px;
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	font-size: 1.2rem;
+	left: 11rem;
+	margin: 0;
+	padding: 0 1em;
+	position: absolute;
+	text-align: center;
+	top: 2px;
+}
+
+.calendar {
+	font-size: 18px;
+	font-size: 1.8rem;
+	text-align: center;
+	width: 100%;
+}
+
+.calendar th,
+td {
+	border: 1px solid #32b4b9;
+	color: #32b4b9;
+	padding: 1rem;
+}
+
+.calendar tr:first-child td,
+.calendar tr td:first-child {
+	border: none;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.calendar th.borderNone:first-child {
+	border: none;
+	font-weight: bold;
+}
+
+.mini-calendar th,
+td {
+	padding: 0;
+}
+
+.mini-calendar table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.mini-calendar tbody {
+	border: 2px solid #32b4b9;
+}
+
+.mini-calendar tr {
+	padding: 0;
+	width: 100%;
+}
+
+.mini-calendar th {
+	color: #32b4b9;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	vertical-align: top;
+}
+
+.mini-calendar th,
+td {
+	color: #32b4b9;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.mini-calendar td .calendar-day-number,
+.calendar-noday-number {
+	background: #eee;
+	display: block;
+	font-weight: normal;
+	height: auto;
+	margin-bottom: 0;
+	padding: 5px;
+	width: 100%;
+}
+
+.mini-calendar [class*="calender-label"] {
+	display: block;
+	margin-top: 0;
+}
+
+.mini-calendar .calendar-labels {
+	font-size: 1.2rem;
+	padding: 5px 3px;
+}
+
+.mini-calendar td.calendar-sat .calendar-day-number {
+	background: #c8ebfe;
+}
+
+.mini-calendar td.calendar-holiday .calendar-day-number,
+.mini-calendar td.calendar-sun .calendar-day-number {
+	background: #f8c7c7;
+}
+
+.calendar-year-month {
+	color: #32b4b9;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	text-align: center;
+}
+
+.calendar-year-month {
+	color: #32b4b9;
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.swiper-container .swiper-slide .mini-calendar {
+	margin: 0;
+	max-width: 100%;
+	width: 100%;
+}
+
+.holiday {
+	align-items: center;
+	color: #ec5b19;
+	display: grid;
+	font-weight: bold;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	padding: 16px 0;
+	text-align: center;
+}
+
+.holiday p {
+	border: 1px solid #ec5b19;
+	margin: initial;
+	margin: 16px;
+}
+
+.googleMap {
+	height: 250px;
+	margin: 2em 0 0 0;
+}
+
+.mainVisual {
+	margin: auto;
+	max-width: 1000px;
+	width: 100%;
+}
+
+.mainVisual .swiper-slide {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mainVisual p {
+	color: #444;
+	display: table-cell;
+	font-size: 12px;
+	font-size: 1.2rem;
+	height: 200px;
+	line-height: 1.5;
+	padding: 2rem;
+	text-shadow: #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px;
+	vertical-align: bottom;
+}
+
+.Catchcopy h2 {
+	font-weight: 600;
+}
+
+.Catchcopy a {
+	background-color: #32b4b9;
+	border-radius: 25px;
+	color: #fff;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	padding: 5px 0 5px;
+	text-align: center;
+	width: 150px;
+}
+
+.info .info-inner {
+	margin: auto;
+}
+
+.info .info-body {
+	display: table;
+	margin: auto;
+}
+
+.info p {
+	max-width: 500px;
+}
+
+.popup-image span {
+	border-bottom: solid 1px #32b4b9;
+	display: block;
+	margin: 3% 0;
+	padding: 0 0 1% 1%;
+}
+
+.summary-body .summary {
+	border-top: 1px solid #32b4b9;
+	color: #32b4b9;
+	line-height: 1.8;
+	margin: 0.5rem 0 0.5rem 0;
+	padding: 10px 0 0;
+	width: 100%;
+}
+
+.summary-body .summary dt {
+	float: left;
+	margin: 0;
+	padding: 0 0 0 0.5rem;
+	width: 7em;
+}
+
+.summary-body .summary dd {
+	border-bottom: 1px solid #32b4b9;
+	color: #000;
+	margin: 0 0 1rem;
+	padding: 0 5px 10px 7em;
+	position: relative;
+	text-align: left;
+}
+
+/* @import "./templates/_template-luxury"; */
+
+.fig {
+	background-color: #eee; /*   margin: 0 calc(50% - 50vw);
+  padding: 24px calc(50vw - 50% + -1px);
+  width: 100vw; */
+	max-width: initial;
+}
+
+.summary_inner {
+	align-content: center;
+}
+
+.summary_inner .summaryText {
+	margin-bottom: initial;
+}
+
+.summary_inner .summaryText .text-big {
+	font-size: 22px;
+	font-size: 2.2rem;
+}
+
+.access li {
+	margin: auto;
+	padding-left: 12px;
+	position: relative;
+	width: 70%;
+}
+
+.access li:before {
+	border: solid 4px transparent;
+	border-left: solid 6px #32b4b9;
+	content: "";
+	height: 0;
+	left: 0;
+	margin-top: -4px;
+	position: absolute;
+	top: 50%;
+	width: 0;
+}
+
+.h3-txt {
+	text-align: left;
+}
+
+/*subpage*/
+
+.main-content {
+	max-width: 1000px;
+	width: 100%;
+}
+
+.doctor p {
+	margin-bottom: initial;
+}
+
+.interview p {
+	margin-bottom: initial;
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+
+.name {
+	font-size: 2rem;
+}
+
+.profileBox ul {
+	padding: 1.5rem 0;
+}
+
+.icon {
+	line-height: 1.4;
+	padding-left: 1.2em;
+	position: relative;
+}
+
+.icon:before {
+	color: #32b4b9;
+	content: "\f111";
+	font-family: "Font Awesome 5 Free";
+	font-size: 1em;
+	left: 0;
+	position: absolute;
+	top: 0.1em;
+}
+
+.col-2 .staff-text {
+	padding-bottom: 56px;
+}
+
+.job-icon {
+	line-height: 1.4;
+	margin-bottom: 30px;
+	margin-top: 3rem;
+	padding-left: 1.2em;
+	position: relative;
+}
+
+.job-icon:before {
+	color: #32b4b9;
+	content: "\f111";
+	font-family: "Font Awesome 5 Free";
+	font-size: 1em;
+	left: 0;
+	position: absolute;
+	top: 0.1em;
+}
+
+.job-list {
+	gap: 20px;
+	background: none;
+	color: #32b4b9;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	max-width: 300px;
+	width: 100%;
+}
+
+.job p {
+	color: #32b4b9;
+	font-size: 2rem;
+	margin: 1rem 0;
+	padding-top: 2rem;
+}
+
+.job .time {
+	border-top: 1px solid #32b4b9;
+	color: #32b4b9;
+	line-height: 1.8;
+	margin: 0.5rem 0 0.5rem 0;
+	padding: 10px 0 0;
+	width: 100%;
+}
+
+.job .time dd {
+	border-bottom: 1px solid #32b4b9;
+	color: #000;
+	margin: 0 0 1rem;
+	padding: 0 5px 10px 13em;
+	position: relative;
+	text-align: left;
+}
+
+.job .time dt {
+	float: left;
+	margin: 0;
+	padding: 0 0 0 0.5rem;
+	width: 7em;
+}
+
+.employment {
+	padding-top: 2rem;
+}
+
+.employment .icon {
+	margin-bottom: initial;
+}
+
+/* @import "utility/**"; */
+
+@media screen and (min-width: 769px) {
+
+.content-col2--text-left {
+	gap: 15px;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 2fr 1fr;
+	text-align: center;
+	text-align: left;
+}
+
+.content-col2--text-right {
+	gap: 15px;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr 2fr;
+	text-align: center;
+	text-align: left;
+}
+
+.col-2 {
+	gap: 20px;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr 1fr;
+}
+
+.content-titleCol2--text-right {
+	gap: 20px;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr 2fr;
+}
+
+.content-titleCol2--text-right p {
+	margin-bottom: initial;
+}
+
+h2:first-of-type {
+	padding-top: 56px;
+}
+
+h2 {
+	text-align: center;
+}
+
+h2 {
+	margin-bottom: 56px;
+}
+
+h3 { /*     @include h3-space; */
+}
+
+p {
+	margin-bottom: 56px;
+}
+
+section {
+	margin: auto;
+	max-width: 1200px;
+}
+
+.layout {
+	margin: auto;
+	max-width: 1200px;
+}
+
+.h2-title {
+	padding-top: 0 !important;
+	text-align: left;
+}
+
+.large {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.header-time {
+	display: block;
+}
+
+.header-none {
+	font-size: 28px;
+	font-size: 2.8rem;
+	font-weight: bold;
+	letter-spacing: 2.2px;
+}
+
+#header_inner {
+	align-items: center;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-areas: none;
+	grid-template-columns: 2fr 200px 1fr;
+	margin: auto;
+	margin-bottom: 50px;
+	margin-top: 20px;
+	max-width: 1280px;
+	width: 100%;
+}
+
+#header_inner .logo {
+	align-self: center;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+
+#header_inner .reservation {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.logo p {
+	color: #787878;
+	display: block;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-bottom: 5px;
+}
+
+.header-holiday {
+	display: inline;
+}
+
+.fa-phone {
+	background: none;
+}
+
+.information {
+	color: #787878;
+	grid-column: 3 / 4;
+	justify-self: auto;
+}
+
+.reservation a {
+	font-size: 16px;
+	font-size: 1.6rem;
+	padding: 10px;
+}
+
+.reservation {
+	justify-self: end;
+}
+
+#global-nav ul {
+	background: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*   grid-template-columns: repeat(6, 170px); */
+	justify-content: center;
+}
+
+#global-nav ul li a:after {
+	color: #32b4b9;
+	padding: 0.7rem;
+	padding: 0;
+}
+
+#global-nav ul li a {
+	color: #787878;
+	padding: 0;
+}
+
+#global-nav li {
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+	width: 100%;
+}
+
+#global-nav li + li {
+	border-left: 1px solid #333;
+	border-left: 0;
+	border-right: 1px solid #333;
+	text-align: center;
+}
+
+footer .footer_inner {
+	gap: 10px;
+	font-size: 14px;
+	font-size: 1.4rem;
+	grid-auto-rows: auto;
+	grid-template-columns: 2fr 1fr 1fr 2fr;
+	margin: auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+footer .footer-info {
+	background: none;
+	color: #fff;
+	grid-column: 4 / 5;
+	grid-row: 1 / 2;
+}
+
+footer .footer-info .fa-phone {
+	color: #fff;
+}
+
+footer .footer-info .footer-yoyaku {
+	background-color: #fff;
+	border-radius: 25px;
+	color: #32b4b9;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+footer .footer-info-time,
+footer .footer-holiday {
+	display: block;
+}
+
+footer .footer-holiday {
+	display: none;
+}
+
+.footer-nav {
+	display: block;
+	padding-bottom: 15px;
+	padding-top: 25px;
+}
+
+.footer-nav ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	justify-items: inherit;
+	margin: auto;
+	max-width: 980px;
+}
+
+.news-list--item {
+	margin: 0 auto 54px;
+	max-width: 600px;
+	width: 100%;
+}
+
+.calendar {
+	margin: auto;
+	max-width: 1000px;
+	width: 800px;
+}
+
+.calendar-year-month {
+	margin-bottom: 0;
+}
+
+.holiday {
+	grid-template-columns: 1fr 2fr;
+	margin: auto;
+	max-width: 600px;
+}
+
+.mainVisual {
+	margin-top: 3rem;
+}
+
+.mainVisual p {
+	display: table-cell;
+	font-size: 25px;
+	font-size: 2.5rem;
+	height: 500px;
+	vertical-align: bottom;
+}
+
+.mainVisual .textSub {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+.Catchcopy {
+	max-width: 800px;
+	padding-top: 2rem;
+}
+
+.Catchcopy h2 {
+	text-align: left;
+}
+
+.info {
+	margin-top: 54px;
+}
+
+.info .info-inner {
+	grid-gap: 10px;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	max-width: 1000px;
+}
+
+.fig {
+	margin-bottom: 54px;
+	margin-top: 54px;
+}
+
+.fig .fig-col-2 {
+	gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(2, 400px);
+	justify-content: center;
+}
+
+.summary_inner {
+	align-items: center;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr 1fr;
+}
+
+.main-content {
+	margin: 4em auto;
+}
+
+.job-offerBox {
+	gap: 20px;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr 1fr;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+body {
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+footer .footer-info-2,
+footer .footer-info-3 {
+	display: none;
+}
+
+.doctor {
+	padding-top: 30px;
+}
+
+.content-col2--text-right .contents-img {
+	order: 2;
+}
+
+.content-col2--text-right .contents-text {
+	order: 1;
+}
+
+.contents-img {
+	display: grid;
+	justify-content: center;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+.ui-datepicker {
+	box-sizing: border-box;
+	left: 0 !important;
+	width: 100%;
+}
+
+.ui-datepicker-calendar {
+	width: 100%;
+}
+
+}
+
