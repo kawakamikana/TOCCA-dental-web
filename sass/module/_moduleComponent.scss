@@ -1,0 +1,373 @@
+//news
+.news-list--item {
+  border-top: 1px solid $color-main;
+  color: $color-main;
+  line-height: 1.8;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 10px 0 0;
+  width: 100%;
+  @include mq(pc) {
+    margin: 0 auto 54px;
+    width: 100%;
+    max-width: 600px;
+  }
+  dt {
+    float: left;
+    margin: 0;
+    padding: 0 0 0 0.5rem;
+    width: 7em;
+  }
+  dd {
+    border-bottom: 1px solid $color-main;
+    color: $color-b;
+    margin: 0 0 1rem;
+    padding: 0 5px 10px 13em;
+    position: relative;
+    text-align: left;
+  }
+}
+
+.cat {
+  background: $color-main;
+  @include border-radius(25);
+  color: $color-w;
+  display: block;
+  @include font-size(12);
+  left: 11rem;
+  margin: 0;
+  padding: 0 1em;
+  position: absolute;
+  text-align: center;
+  top: 2px;
+}
+
+//カレンダー
+.calendar {
+  text-align: center;
+  width: 100%;
+  @include font-size(18);
+  @include mq(pc) {
+    margin: auto;
+    max-width: 800px;
+  }
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid $color-main;
+  color: $color-main;
+  @include mq(pc) {
+  padding: 1rem;
+  }
+}
+
+.calendar tr:first-child td,
+.calendar tr td:first-child {
+  border: none;
+  @include font-size(14);
+  font-weight: bold;
+}
+
+.calendar th.borderNone:first-child {
+  border: none;
+  font-weight: bold;
+}
+
+.mini-calendar th,
+td {
+  padding: 0;
+}
+
+.mini-calendar td {
+  border: 1px solid $color-main;
+}
+
+.mini-calendar table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.mini-calendar tbody {
+  border: 2px solid $color-main;
+}
+
+.mini-calendar tr {
+  padding: 0;
+  width: 100%;
+}
+
+.mini-calendar th {
+  color: $color-main;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  vertical-align: top;
+}
+
+.mini-calendar th,
+td {
+  color: $color-main;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mini-calendar td .calendar-day-number,
+.calendar-noday-number {
+  background: #eee;
+  display: block;
+  font-weight: normal;
+  height: auto;
+  margin-bottom: 0;
+  padding: 5px;
+  width: 100%;
+}
+
+.mini-calendar [class*="calender-label"] {
+  display: block;
+  margin-top: 0;
+}
+
+.mini-calendar .calendar-labels {
+  font-size: 1.2rem;
+  padding: 5px 3px;
+}
+
+.mini-calendar td.calendar-sat .calendar-day-number {
+  background: $color-calendar-o;
+}
+.mini-calendar td.calendar-holiday .calendar-day-number,
+.mini-calendar td.calendar-sun .calendar-day-number {
+  background: $color-calendar-p;
+}
+
+.calendar-year-month {
+  color: $color-main;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  text-align: center;
+  @include mq(pc) {
+    margin-bottom: 0;
+  }
+}
+.calendar-year-month {
+  color: $color-main;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.swiper-container .swiper-slide .mini-calendar {
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.holiday {
+  padding: 16px 0;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color: $color-warning;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  @include mq(pc) {
+    grid-template-columns: 1fr 2fr;
+    max-width: 600px;
+    margin: auto;
+  }
+  p {
+    border: 1px solid $color-warning;
+    margin: initial;
+    margin: 16px;
+  }
+}
+
+.googleMap {
+  height: 250px;
+  margin: 2em 0 0 0;
+}
+
+
+//content text左
+.content-col2--text-left {
+  @include mq(pc) {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 2fr 1fr;
+    text-align: center;
+    gap: 15px;
+    text-align: left;
+  }
+}
+
+//content text右
+.content-col2--text-right {
+  display: grid;
+  @include mq(pc) {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 2fr;
+    text-align: center;
+    gap: 15px;
+    text-align: left;
+  }
+}
+
+//2column col-2
+.col-2 {
+  @include mq(pc) {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.content-titleCol2--text-right {
+  @include mq(pc) {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    p {
+      margin-bottom: initial;
+    }
+  }
+}
+
+.form-body {
+  background-color:$color-g;
+  color: $color-main;
+  font-size: 14px;
+  padding: 20px;
+  p {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    @include font-size(16);
+    text-align: left;
+  }
+
+  .g-recaptcha {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  input,
+  select {
+    width: auto;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid $color-g-sub;
+    line-height: 1.2;
+    padding: 8px;
+  }
+
+  input.submit_button {
+    background-color:$color-navborder;
+    color:$color-w;
+    display: block;
+    font-size: 14px;
+    height: 48px;
+    line-height: 1.5;
+    margin: 30px auto 0;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 225px;
+  }
+  .submit_button:hover {
+    background:$color-button;
+   }
+   
+  textarea {
+    width: 100%;
+  }
+}
+
+.contents-text {
+  p {
+    margin-bottom: 20px;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+}
+
+//form
+.ui-datepicker {
+  background-color:$color-w;
+}
+
+.ui-datepicker-header {
+  padding: 15px 10px;
+  background-color:$color-datepicker;
+}
+.ui-datepicker-header a {
+  color:$color-w;
+}
+.ui-datepicker-header a:hover {
+  color: $color-main;
+}
+
+.ui-datepicker-prev {
+  float: left;
+}
+
+.ui-datepicker-next {
+  float: right;
+}
+
+.ui-datepicker-title {
+  padding: 0 30px;
+  text-align: center;
+  color: $color-w;
+}
+
+.ui-datepicker-calendar {
+  padding: 0.5em;
+  border-collapse: unset;
+  border-spacing: 3px;
+  text-align: center;
+  color: $color-datepicker;
+}
+.ui-datepicker-calendar thead {
+  font-weight: bold;
+}
+.ui-datepicker-calendar thead th {
+  padding: 0.5em 0;
+}
+.ui-datepicker-calendar td {
+  padding: 0;
+  border: none;
+}
+.ui-datepicker-calendar a {
+  display: block;
+  padding: 0.5em;
+  color:$color-datepicker;
+}
+.ui-datepicker-calendar a:hover {
+  background-color:$color-datepicker;
+  color:$color-w;
+}
+
+.ui-datepicker-header:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .ui-datepicker {
+    left: 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .ui-datepicker-calendar {
+    width: 100%;
+  }
+}

@@ -9,11 +9,14 @@
     margin-bottom: 54px;
   }
   .fig-col-2 {
+    text-align: center;
     @include mq(pc) {
       display: grid;
+      max-width: 800px;
+      margin: auto;
       gap: 10px;
       justify-content: center;
-      grid-template-columns: repeat(2, 400px);
+      grid-template-columns:1fr 1fr;
     }
   }
 }

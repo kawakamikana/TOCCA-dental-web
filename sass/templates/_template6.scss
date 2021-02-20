@@ -34,7 +34,7 @@
     }
   }
 
-  .Catchcopy {
+  .catchcopy {
     @include mq(pc) {
       padding-top: 2rem;
       max-width: 800px;
@@ -59,6 +59,9 @@
   }
   
   .info {
+      h3{
+        @include font-size(18);
+      }
     @include mq(pc) {
       margin-top: 54px;
     }
@@ -68,51 +71,17 @@
         display: grid;
         grid-auto-rows: auto;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
         max-width: 1000px;
       }
     }
     .info-body {
       display: table;
       margin: auto;
+      background: $color-sub;
+      height: 100%;
     }
   
     p {
       max-width: 500px;
     }
   }
-
-
-  .popup-image{
-    span {
-    border-bottom: solid 1px #32b4b9;
-    display: block;
-    margin: 3% 0;
-    padding: 0 0 1% 1%;
-    }
-}
-
-.summary-body{
-  .summary{
-    border-top: 1px solid #32b4b9;
-    color: #32b4b9;
-    line-height: 1.8;
-    margin: 0.5rem 0 0.5rem 0;
-    padding: 10px 0 0;
-    width: 100%;
-    dt {
-      float: left;
-      margin: 0;
-      padding: 0 0 0 0.5rem;
-      width: 7em;
-  }
-  dd {
-    border-bottom: 1px solid #32b4b9;
-    color: #000;
-    margin: 0 0 1rem;
-    padding: 0 5px 10px 7em;
-    position: relative;
-    text-align: left;
-}
-  }
-}

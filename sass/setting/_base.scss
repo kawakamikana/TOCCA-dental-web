@@ -129,10 +129,10 @@ table {
 }
 
 @font-face {
-  font-family: "Noto Sans JP";
+/*   font-family: "Noto Sans JP";
   font-style: normal;
   src: local("Noto Sans CJK JP"),
-    url(http://fonts.googleapis.com/earlyaccess/notosansjp.css) format("woff");
+    url(http://fonts.googleapis.com/earlyaccess/notosansjp.css) format("woff"); */
 }
 
 *,
@@ -156,7 +156,8 @@ body {
   min-height: 100vh;
   /* 16px */
   /*font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "メイリオ",Meiryo;*/
-  font-family: "Noto Sans JP", "Noto Sans Japanese", sans-serif;
+/*   font-family:$Noto-SansJP; */
+  font-family:$MinchoNoto-Sans;
   @include font-size(16);
   line-height: 1.8;
   min-height: 100%;
