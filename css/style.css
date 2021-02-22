@@ -10,38 +10,12 @@ $color-accent: #fff700; */
 :root { /* font style */
 	--default-font-serif: 'Noto Serif', 'NotoSerifJP-local', 'Noto Serif JP', serif;
 	--default-font-sans: 'Noto Sans', 'NotoSansJP-local', 'Noto Sans JP', sans-serif;
-	--default-font-mono: 'Inconsolata', 'NotoSansJP-local', 'Noto Sans JP', monospace;
-	--default-font-emoji: 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', Times, Symbola, Aegyptus, Code2000, Code2001, Code2002, Musica, serif, LastResort;
-	--default-font-weight-normal: 500;
-	--default-font-weight-bold: 700; /* light and dark */
-	--light-text-color: black;
-	--light-background-color: rgb(255,248,231);
-	--dark-text-color: lavender;
-	--dark-background-color: rgb(20, 20, 40); /* root style */
-	--root-text-color: lavender;
-	--root-background-color: rgb(20, 20, 40); /* default style */
-	--default-text-color: lavender;
-	--default-link-color: lightskyblue;
-	--default-visited-color: lightskyblue;
-	--default-caution-color: coral;
-	--default-background-color: transparent;
-	--default-border-color: slategray; /* header style */
-	--header-text-color: wheat;
-	--header-background-color: transparent; /* table style */
-	--table-border-color: slategray;
-	--table-header-text-color: inherit;
-	--table-header-background-color: darkslategray; /* icons */
-	--icon-text-github: white;
-	--icon-text-share: slategray;
-	--icon-text-twitter: dodgerblue;
-	--icon-text-medium: lavender;
-	--icon-text-tumblr: lavender;
-	--icon-text-instagram: coral;
-	--icon-text-flickr: white;
-	--icon-text-facebook: royalblue;
-	--icon-text-linkedin: steelblue;
-	--icon-text-envelope: inherit;
-	--icon-text-pocket: red;
+	--default-font-M-PLUS: 'M PLUS 1p', sans-serif;
+}
+
+.border-radius-circle,
+.reservation span {
+	border-radius: 50%;
 }
 
 .news-list--item {
@@ -492,10 +466,10 @@ table {
 	border-spacing: 0;
 }
 
-@font-face { /*   font-family: "Noto Sans JP";
-  font-style: normal;
-  src: local("Noto Sans CJK JP"),
-    url(http://fonts.googleapis.com/earlyaccess/notosansjp.css) format("woff"); */
+@font-face {
+	src: local("Noto Sans CJK JP"), url(http://fonts.googleapis.com/earlyaccess/notosansjp.css) format("woff");
+	font-family: "Noto Sans JP";
+	font-style: normal;
 }
 
 *,
@@ -514,10 +488,12 @@ body {
 	-webkit-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	display: flex;
-	flex-direction: column; /* 16px */ /*font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "メイリオ",Meiryo;*/ /*   font-family:$Noto-SansJP; */
-	font-family: "Noto Serif JP", serif;
+	flex-direction: column; /* 16px */
+	font-family: "Noto Serif JP", serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "メイリオ", Meiryo;
 	font-size: 16px;
-	font-size: 1.6rem;
+	font-size: 1.6rem; /*   font-family:$MinchoNoto-Sans; */
+	font-weight: bold;
+	letter-spacing: 0.2em;
 	line-height: 1.8;
 	min-height: 100vh;
 	min-height: 100%;
@@ -632,8 +608,7 @@ section {
 
 /* @import "./layout/layout3"; */
 
-header {
-	gap: 10px;
+header { /*   gap: 10px; */
 	background: #dbcaaa;
 	display: grid;
 	grid-auto-rows: auto;
@@ -687,7 +662,7 @@ header {
 	grid-auto-rows: auto;
 	grid-template-areas: "logo reservation . ." "logo reservation . ." "logo reservation . .";
 	grid-template-columns: 2fr 1fr; /*   gap: 10px; */
-	padding: 0 5px 0 5px;
+	padding: 15px;
 }
 
 .header-inner .logo {
@@ -718,8 +693,7 @@ header {
 	text-align: center;
 }
 
-.fa-phone {
-	background: #f1f2f4;
+.fa-phone { /*   background: $color-fa-phone; */
 	border-radius: 25px;
 	color: #715f5f;
 	display: block;
@@ -727,31 +701,44 @@ header {
 }
 
 .information {
+	display: none;
 	grid-column: 1 / 3;
 	justify-self: center; /*   grid-row: 2 / 2; */
 }
 
 .reservation {
+	gap: 10px;
+	align-items: center;
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: 2fr 1fr;
 	justify-self: center;
-}
-
-.reservation span {
-	background-color: #715f5f;
-	border-radius: 25px;
 	text-align: center;
 }
 
-.reservation a {
+.reservation span {
+	align-content: center;
+	background-color: #715f5f;
+	display: grid;
+	height: 35px;
+	width: 35px;
+}
+
+.reservation span a {
 	color: #fff;
-	display: inline-block;
+}
+
+.reservation a {
+	color: #715f5f;
+	display: grid;
 	font-size: 12px;
 	font-size: 1.2rem;
-	padding: 6px;
 }
 
 #global-nav {
+	font-family: "M PLUS Rounded 1c", sans-serif;
 	margin: auto;
-	max-width: 1000px;
+	max-width: 1200px;
 	width: 100%;
 }
 
@@ -769,7 +756,7 @@ header {
 #global-nav ul li a {
 	color: #fff;
 	display: block;
-	padding: 0.7rem;
+	padding: 1rem;
 }
 
 #global-nav li {
@@ -885,9 +872,8 @@ small {
 
 /* @import "./templates/_template3"; */
 
-.mainVisual {
+.mainVisual { /*     max-width: 1000px; */
 	margin: auto;
-	max-width: 1000px;
 	width: 100%;
 }
 
@@ -900,6 +886,7 @@ small {
 .mainVisual p {
 	color: #444;
 	display: table-cell;
+	font-family: "Noto Serif JP", serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	height: 200px;
@@ -909,20 +896,26 @@ small {
 	vertical-align: bottom;
 }
 
-.catchcopy h2 {
-	font-weight: 600;
+.catchcopy {
+	font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 .catchcopy a {
 	background-color: #715f5f;
-	border-radius: 25px;
 	color: #fff;
 	display: block;
+	font-family: "M PLUS Rounded 1c", sans-serif;
 	margin: auto;
 	margin-top: 20px;
-	padding: 5px 0 5px;
+	max-width: 400px;
+	padding: 10px 0 10px;
 	text-align: center;
-	width: 150px;
+}
+
+.catchcopy a:hover:hover {
+	background: #dbcaaa;
+	color: #715f5f;
+	transition: 0.3s;
 }
 
 .info h3 {
@@ -937,12 +930,31 @@ small {
 .info .info-body {
 	background: #dbcaaa;
 	display: table;
+	font-family: "Noto Serif JP", serif;
 	height: 100%;
 	margin: auto;
 }
 
+.info .info-body a {
+	background-color: #715f5f;
+	color: #fff;
+	display: block;
+	font-family: "M PLUS Rounded 1c", sans-serif;
+	margin: auto;
+	margin-top: 20px;
+	max-width: 200px;
+	padding: 5px 0 5px;
+	text-align: center;
+}
+
 .info p {
+	line-height: initial;
 	max-width: 500px;
+	padding: 0 30px;
+}
+
+.news {
+	margin-top: 100px;
 }
 
 .fig {
@@ -954,6 +966,14 @@ small {
 
 .fig .fig-col-2 {
 	text-align: center;
+}
+
+.calendarArea,
+.index_width,
+.facilit,
+.summary,
+.googleMap {
+	margin-top: 100px;
 }
 
 .summary_inner {
@@ -1244,7 +1264,7 @@ section {
 	margin: auto;
 	margin-bottom: 50px;
 	margin-top: 20px;
-	max-width: 1280px;
+	max-width: 1200px;
 	width: 100%;
 }
 
@@ -1277,6 +1297,7 @@ section {
 
 .information {
 	color: #787878;
+	display: block;
 	grid-column: 3 / 4;
 	justify-self: auto;
 }
@@ -1362,15 +1383,14 @@ footer .footer-holiday {
 	max-width: 980px;
 }
 
-.mainVisual {
-	margin-top: 3rem;
+.mainVisual { /*       margin-top: 3rem; */
 }
 
 .mainVisual p {
 	display: table-cell;
 	font-size: 25px;
 	font-size: 2.5rem;
-	height: 500px;
+	height: 700px;
 	vertical-align: bottom;
 }
 
@@ -1380,7 +1400,7 @@ footer .footer-holiday {
 }
 
 .catchcopy {
-	max-width: 800px;
+	max-width: 1000px;
 	padding-top: 2rem;
 }
 
@@ -1389,7 +1409,7 @@ footer .footer-holiday {
 }
 
 .info {
-	margin-top: 54px;
+	margin-top: 100px;
 }
 
 .info .info-inner {
@@ -1400,8 +1420,7 @@ footer .footer-holiday {
 }
 
 .fig {
-	margin-bottom: 54px;
-	margin-top: 54px;
+	margin-top: 100px; /*     margin-bottom: 54px; */
 }
 
 .fig .fig-col-2 {

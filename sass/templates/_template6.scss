@@ -1,9 +1,9 @@
 .mainVisual {
     width: 100%;
-    max-width: 1000px;
+/*     max-width: 1000px; */
     margin: auto;
     @include mq(pc) {
-      margin-top: 3rem;
+/*       margin-top: 3rem; */
     }
     .swiper-slide {
       background-position: center;
@@ -20,10 +20,11 @@
       line-height: 1.5;
       padding: 2rem;
       @include font-size(12);
+      font-family:$MinchoNoto-Sans;
       @include mq(pc) {
         display: table-cell;
         vertical-align: bottom;
-        height: 500px;
+        height: 700px;
         @include font-size(25);
       }
     }
@@ -35,26 +36,29 @@
   }
 
   .catchcopy {
+    font-family:$M-PLUS;
     @include mq(pc) {
       padding-top: 2rem;
-      max-width: 800px;
+      max-width: 1000px;
     }
     h2 {
-      font-weight: 600;
       @include mq(pc) {
         text-align: left;
       }
     }
     a {
       background-color: $color-main;
-      @include border-radius(25);
       color: $color-w;
       display: block;
       margin: auto;
       margin-top: 20px;
-      padding: 5px 0 5px;
+      padding:10px 0 10px;
       text-align: center;
-      width: 150px;
+      max-width:400px;
+      font-family:$M-PLUS;
+      &:hover{
+        @include hover(hovercolorSecondary);
+      }
     }
   }
   
@@ -63,7 +67,7 @@
         @include font-size(18);
       }
     @include mq(pc) {
-      margin-top: 54px;
+      margin-top:100px;
     }
     .info-inner {
       margin: auto;
@@ -79,9 +83,27 @@
       margin: auto;
       background: $color-sub;
       height: 100%;
+      font-family: $MinchoNoto-Sans;
+      a{
+        background-color:$color-main;
+        color:$color-w;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        max-width:200px;
+        padding: 5px 0 5px;
+        text-align: center;
+        font-family:$M-PLUS;
+      }
     }
   
     p {
       max-width: 500px;
+      padding: 0 30px;
+      line-height: initial;
     }
+  }
+
+  .news{
+    margin-top:100px;
   }

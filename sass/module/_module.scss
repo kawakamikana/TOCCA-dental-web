@@ -37,8 +37,8 @@ $viewport: 768;
     color: $color-w;
   }
 
-  //$styleがhovercolorだった時　hover背景色がwhite
-  @else if $style == hovercolor {
+  //$styleがhovercolorPrimaryだった時　hover背景色がwhite
+  @else if $style == hovercolorPrimary {
     &:hover {
       background: $color-w;
       color: $color-main;
@@ -47,11 +47,11 @@ $viewport: 768;
     }
   }
 
-  //$styleがhovercolorOrangeだった時　hover背景色がorange
-  @else if $style == hovercolorOrange {
+  //$styleがhovercolorSecondaryだった時　hover背景色がcolor-sub
+  @else if $style == hovercolorSecondary {
     &:hover {
-      background: $color-main;
-      color: $color-w;
+      background: $color-sub;
+      color: $color-main;
       transition: 0.3s;
     }
   }
@@ -137,6 +137,14 @@ $viewport: 768;
   border-radius: $radius + px;
 }
 
+@mixin border-radius-per($radius) {
+  border-radius: $radius;
+}
+
+.border-radius-circle{
+  @include border-radius-per(50%);
+  }
+
 //プレースホルダー @include placeholder($color-form);
 @mixin placeholder($color) {
   &::placeholder {
@@ -162,4 +170,8 @@ $viewport: 768;
 @mixin mp-set($m-size, $p-size) {
   margin: $m-size;
   padding: $p-size;
+}
+
+@mixin small-uppercase() {
+  letter-spacing: 0.2em;
 }

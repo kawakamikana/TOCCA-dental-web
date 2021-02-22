@@ -37,48 +37,14 @@ $MinchoNoto-Sans: 'Noto Serif JP', serif;
 //ゴシックフォント
 $Noto-SansJP:"Noto Sans JP", "Noto Sans Japanese", sans-serif;
 
+//ゴシックフォント M PLUS
+$M-PLUS: 'M PLUS Rounded 1c', sans-serif;
+
 
 :root {
     /* font style */
     --default-font-serif: 'Noto Serif', 'NotoSerifJP-local', 'Noto Serif JP', serif;
     --default-font-sans: 'Noto Sans', 'NotoSansJP-local', 'Noto Sans JP', sans-serif;
-    --default-font-mono: 'Inconsolata', 'NotoSansJP-local', 'Noto Sans JP', monospace;
-    --default-font-emoji: 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', Times, Symbola, Aegyptus, Code2000, Code2001, Code2002, Musica, serif, LastResort;
-    --default-font-weight-normal: 500;
-    --default-font-weight-bold: 700;
-    /* light and dark */
-    --light-text-color: black;
-    --light-background-color: rgb(255,248,231);
-    --dark-text-color: lavender;
-    --dark-background-color: rgb(20, 20, 40);
-    /* root style */
-    --root-text-color: lavender;
-    --root-background-color: rgb(20, 20, 40);
-    /* default style */
-    --default-text-color: lavender;
-    --default-link-color: lightskyblue;
-    --default-visited-color: lightskyblue;
-    --default-caution-color: coral;
-    --default-background-color: transparent;
-    --default-border-color: slategray;
-    /* header style */
-    --header-text-color: wheat;
-    --header-background-color: transparent;
-    /* table style */
-    --table-border-color: slategray;
-    --table-header-text-color: inherit;
-    --table-header-background-color: darkslategray;
-    /* icons */
-    --icon-text-github: white;
-    --icon-text-share: slategray;
-    --icon-text-twitter: dodgerblue;
-    --icon-text-medium: lavender;
-    --icon-text-tumblr: lavender;
-    --icon-text-instagram: coral;
-    --icon-text-flickr: white;
-    --icon-text-facebook: royalblue;
-    --icon-text-linkedin: steelblue;
-    --icon-text-envelope: inherit;
-    --icon-text-pocket: red;
+    --default-font-M-PLUS:'M PLUS 1p', sans-serif;
   }
   

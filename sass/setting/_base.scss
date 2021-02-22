@@ -129,10 +129,10 @@ table {
 }
 
 @font-face {
-/*   font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP";
   font-style: normal;
   src: local("Noto Sans CJK JP"),
-    url(http://fonts.googleapis.com/earlyaccess/notosansjp.css) format("woff"); */
+    url(http://fonts.googleapis.com/earlyaccess/notosansjp.css) format("woff");
 }
 
 *,
@@ -155,13 +155,15 @@ body {
   flex-direction: column;
   min-height: 100vh;
   /* 16px */
-  /*font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "メイリオ",Meiryo;*/
-/*   font-family:$Noto-SansJP; */
-  font-family:$MinchoNoto-Sans;
+  font-family: $MinchoNoto-Sans, -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", "メイリオ", Meiryo;
+  /*   font-family:$MinchoNoto-Sans; */
+  font-weight: bold;
   @include font-size(16);
   line-height: 1.8;
   min-height: 100%;
   text-size-adjust: 100%;
+  @include small-uppercase();
   @include mq() {
     @include font-size(15);
   }
@@ -198,7 +200,7 @@ h3 {
   font-weight: 700;
   text-align: center;
   @include mq(pc) {
-/*     @include h3-space; */
+    /*     @include h3-space; */
   }
 }
 
@@ -220,7 +222,7 @@ section {
   }
 }
 
-.layout{
+.layout {
   padding: $size-base * 2;
   @include mq(pc) {
     max-width: 1200px;
