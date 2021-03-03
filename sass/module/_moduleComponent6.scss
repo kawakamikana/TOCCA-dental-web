@@ -88,6 +88,7 @@ td {
 }
 
 .mini-calendar tbody {
+  background: $color-w;
   border: 2px solid $color-main;
 }
 
@@ -112,7 +113,7 @@ td {
 
 .mini-calendar td .calendar-day-number,
 .calendar-noday-number {
-  background: #eee;
+  background:$color-g;
   display: block;
   font-weight: normal;
   height: auto;
@@ -127,8 +128,8 @@ td {
 }
 
 .mini-calendar .calendar-labels {
-  font-size: 1.2rem;
-  padding: 5px 3px;
+  font-size: 1rem;
+  padding:5px 2px;
 }
 
 .mini-calendar td.calendar-sat .calendar-day-number {
@@ -220,6 +221,11 @@ td {
     grid-auto-rows: auto;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+  span{
+    display: block;
+    margin: 10px 0;
+    border-bottom: solid 1px $color-main;
   }
 }
 

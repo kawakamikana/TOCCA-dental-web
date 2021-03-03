@@ -9,7 +9,8 @@ $width-sp-base-padding: $size-base * 3;
 // メインカラー
 $color-main:#715f5f;
 $color-sub: #dbcaaa;
-$color-bg: #fff6ec;
+$color-main-bg:#e7e6e5;
+$color-mainVisual-text:#444;
 
 $color-nav: #787878;
 $color-navborder: #333;
@@ -30,21 +31,4 @@ $color-gb: #404040;
 $color-button:#666666;
 
 $color-datepicker: #726250;
-
-//明朝フォント
-$MinchoNoto-Sans: 'Noto Serif JP', serif;
-
-//ゴシックフォント
-$Noto-SansJP:"Noto Sans JP", "Noto Sans Japanese", sans-serif;
-
-//ゴシックフォント M PLUS
-$M-PLUS: 'M PLUS Rounded 1c', sans-serif;
-
-
-:root {
-    /* font style */
-    --default-font-serif: 'Noto Serif', 'NotoSerifJP-local', 'Noto Serif JP', serif;
-    --default-font-sans: 'Noto Sans', 'NotoSansJP-local', 'Noto Sans JP', sans-serif;
-    --default-font-M-PLUS:'M PLUS 1p', sans-serif;
-  }
   

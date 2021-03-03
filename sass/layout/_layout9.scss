@@ -1,9 +1,18 @@
+main {
+  background-image: url(/images/texture/texture-orange.jpg);
+  background: repeat;
+/*   background-color: $color-texture-bg;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f39800' fill-opacity='0.44' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); */
+}
+
 //header
 header {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  gap: 10px;
+  /*   gap: 10px; */
+  background-image: url(/images/texture/texture-orange.jpg);
+  background: repeat;
 }
 
 .header-time {
@@ -13,12 +22,17 @@ header {
 }
 
 .header-none {
-  display: block;
   @include mq(pc) {
+    color: $color-main;
     font-weight: bold;
     letter-spacing: 2.2px;
     @include font-size(28);
   }
+}
+
+.gnav {
+  background-image: url(/images/texture/texture-orange.jpg);
+  background: repeat;
 }
 
 #global-nav li a:after {
@@ -59,12 +73,12 @@ header {
   opacity: 0.8;
 }
 
-#header_inner {
+.header-inner {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   grid-auto-rows: auto;
   /*   gap: 10px; */
-  padding: 0 5px 0 5px;
+  padding: 15px;
   grid-template-areas:
     "logo reservation . ."
     "logo reservation . ."
@@ -76,7 +90,7 @@ header {
     grid-template-columns: 2fr 200px 1fr;
     grid-template-areas: none;
     align-items: center;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: auto;
     width: 100%;
     margin-bottom: 50px;
@@ -96,6 +110,7 @@ header {
     @include mq(pc) {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
+      margin-right: 15px;
     }
   }
 }
@@ -103,13 +118,13 @@ header {
 .logo {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
-  align-self: end;
+  align-self: center;
   p {
     display: none;
     @include mq(pc) {
       margin-bottom: 5px;
       display: block;
-      color: $color-nav;
+      color: $color-b;
       @include font-size(14);
     }
   }
@@ -120,7 +135,6 @@ header {
 
 .header-holiday {
   display: block;
-  color: $color-warning;
   text-align: center;
   @include mq(pc) {
     display: inline;
@@ -128,7 +142,7 @@ header {
 }
 
 .fa-phone {
-  background: $color-fa-phone;
+  /*   background: $color-fa-phone; */
   border-radius: 25px;
   color: $color-main;
   display: block;
@@ -139,31 +153,46 @@ header {
 }
 
 .information {
-  text-align: center;
   justify-self: center;
   grid-column: 1 / 3;
+  display: none;
   /*   grid-row: 2 / 2; */
   @include mq(pc) {
-    text-align: left;
     grid-column: 3 / 4;
-    color: $color-nav;
+    color: $color-b;
     justify-self: auto;
+    display: block;
   }
 }
 .reservation {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 2fr 1fr;
+  text-align: center;
   justify-self: center;
+  align-items: center;
+  gap: 10px;
+  @include mq(pc) {
+    grid-template-columns: 1fr;
+  }
   span {
-    text-align: center;
-    @include border-radius(25);
+    display: grid;
+    align-content: center;
+    @extend .border-radius-circle;
+    height: 45px;
+    width: 45px;
     background-color: $color-main;
     @include mq(pc) {
+      display: none;
+    }
+    a {
+      color: $color-w;
     }
   }
   a {
-    color: $color-w;
-    display: inline-block;
+    color: $color-main;
+    display: grid;
     @include font-size(12);
-    padding: 6px;
     @include mq(pc) {
       @include font-size(16);
       padding: 10px;
@@ -172,22 +201,28 @@ header {
   @include mq(pc) {
     justify-self: end;
   }
+
+  .fa-phone-alt {
+    font-size: 2.5em;
+    color: $color-main;
+  }
 }
 
 #global-nav {
   margin: auto;
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
+  font-family: $M-PLUS;
 }
 
 #global-nav ul {
-  background: $color-main;
+/*   background: $color-main; */
   display: flex;
   flex-wrap: wrap;
   @include mq(pc) {
     background: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     /*   grid-template-columns: repeat(6, 170px); */
     justify-content: center;
   }
@@ -199,40 +234,24 @@ header {
 }
 
 #global-nav ul li a {
-  color: $color-w;
+  color: $color-b;
   display: block;
-  padding: 0.7rem;
-  &:after {
-    color: $color-w;
-    content: attr(title);
-    display: block;
-    @include font-size(10);
-    padding-top: 0.3rem;
-    text-align: center;
-    @include mq(pc) {
-      color: $color-main;
-      padding: 0.7rem;
-      padding: 0;
-    }
-  }
+  padding: 1rem;
   @include mq(pc) {
-    color: $color-nav;
     padding: 0;
+    @include font-size(14);
   }
 }
 
 #global-nav li {
-  border-bottom: 1px solid $color-w;
-  border-right: 1px solid $color-w;
   text-align: center;
   @include mq(pc) {
     width: 100%;
-    border-left: 1px solid $color-navborder;
-    border-right: 1px solid $color-navborder;
+    padding: 10%;
   }
 }
 
-#global-nav li + li {
+/* #global-nav li + li {
   border-bottom: 1px solid $color-w;
   border-left: 0;
   border-right: 1px solid $color-w;
@@ -242,7 +261,7 @@ header {
     border-left: 0;
     text-align: center;
   }
-}
+} */
 
 //footer
 footer {
@@ -371,7 +390,7 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       justify-items: inherit;
-      max-width:1100px;
+      max-width: 1200px;
       margin: auto;
     }
     li > a {
@@ -383,7 +402,7 @@ footer {
 //Copyright
 small {
   background: $color-sub;
-  color: $color-w;
+  color: $color-main;
   display: block;
   padding: 1rem;
   text-align: center;

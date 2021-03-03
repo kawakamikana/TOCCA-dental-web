@@ -1,28 +1,54 @@
 //各templateカラー
 /* @import "./module/color1"; */
-/* @import "./module/color2"; */
+@import "./module/color2";
 /* @import "./module/color3"; */
-@import "./module/color6";
+
+//自費診療6~8
+/* @import "./module/color6"; */
+/* @import "./module/color7"; */
+/* @import "./module/color8"; */
+
+/* @import "./module/color9"; */
 @import "./module/module";
-@import "./module/moduleComponent";
 
+/* @import "./module/moduleComponent6"; */
 
-@import "./setting/**";
+//明朝・ゴシック
+/* @import "./setting/**"; */
+@import "./setting/base-NotoSans";
+/* @import "./setting/base-NotoSerif"; */
 
 // 各templateのheader、footer
 /* @import "./layout/layout1"; */
-/* @import "./layout/layout2"; */
+@import "./layout/layout2";
 /* @import "./layout/layout3"; */
-@import "./layout/layout6";
+
+//自費診療6~8
+/* @import "./layout/layout6"; */
+/* @import "./layout/layout7"; */
+/* @import "./layout/layout8"; */
+/* @import "./layout/layout9"; */
+
 
 // 各templateデザイン
 /* @import "./templates/_template1"; */
-/* @import "./templates/template2"; */
+@import "./templates/template2";
 /* @import "./templates/_template3"; */
-@import "./templates/template6";
+
+//自費診療6~8
+/* @import "./templates/template6"; */
+/* @import "./templates/template7"; */
+/* @import "./templates/template8"; */
+/* @import "./templates/template9"; */
 
 //ページ独自スタイル
-@import "./page/**";
+/* @import "./page/**"; */
+
+//自費診療6~8
+@import "./page/lowerPage";
+@import "./page/indexComponent";
+@import "./page/index";
+/* @import "./page/index9"; */
 /* @import "utility/**"; */
 
 //テンプレートで読まないものはコメントアウトしてcss出力

@@ -1,0 +1,40 @@
+gulp-project
+
+npm install -g gulp
+
+npm install gulp-cli -g
+
+yarn add gulp-cli -g
+
+yarn add browser-sync
+
+
+https://tsudoi.org/guide/detail/9.html
+
+// レイアウト幅
+/* $layout-width-canvas: 1440px;
+$layout-width-inner: 1060px;
+$layout-width-vw: 1060; 
+$breakpoints: (
+	"mobile-max": "(#{$mobile-max})",
+	"tablet-min": "(min-width: 768px) and (max-width: #{$layout-width-inner - 1px})",
+	"tablet-max": "(max-width: #{$layout-width-inner - 1px})",
+	"laptop-min": "(min-width: #{$layout-width-inner})",
+	"laptop-max": "(min-width: #{$layout-width-inner})",
+	"desktop-min": "(min-width: #{$layout-width-inner})",
+	"desktop-max:": "(min-width: #{$layout-width-inner})",
+	"hd-min:": "(min-width: #{$layout-width-inner})",
+ 	"ie": "(-ms-high-contrast: active), (-ms-high-contrast: none)"
+
+// ブレークポイント
+$breakpoints: (
+	"mobile-max":"(#{$mobile-max})",
+	"tablet": "(min-width: #{$tablet-min}) and (max-width:#{$tablet-max})",
+	"laptop": "(min-width: #{$laptop-min}) and (max-width: #{$laptop-max})",
+	"desktop": "(min-width: #{$desktop-min}) and (max-width: #{$desktop-max})",
+	"hd-min:": "(min-width: #{$hd-min})",
+	"ie": "(-ms-high-contrast: active), (-ms-high-contrast: none)"
+)!default;
+
+/* https://muroiwataru.net/entry/sass-mixin 
+https://goodsan.jp/wp/sassmixin/ */

@@ -6,6 +6,7 @@
 .main-content {
   max-width: 1000px;
   width: 100%;
+  padding-top: 2rem;
   @include mq(pc) {
     margin: 4em auto;
   }

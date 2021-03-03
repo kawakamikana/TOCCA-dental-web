@@ -38,7 +38,7 @@ var swiper1 = new Swiper ('.swiper1', {
     pagination: '.swiper-pagination',  // ページネーションを使う場合適用要素のクラスを指定。
     loop: true, //ループ
     simulateTouch: true,//マウス操作でスライドさせるか
-    slidesPerView: 3,
+    slidesPerView: 2,
     slidesPerGroup: 1,
     spaceBetween: 30,
     speed: 800,

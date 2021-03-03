@@ -1,3 +1,12 @@
+:root {
+  --default-font-serif: 'Noto Serif', 'NotoSerifJP-local', 'Noto Serif JP', serif, -apple-system, BlinkMacSystemFont,
+  "Helvetica Neue", "メイリオ", Meiryo;
+  --default-font-sans: 'Noto Sans', 'NotoSansJP-local', 'Noto Sans JP', sans-serif, -apple-system, BlinkMacSystemFont,
+  "Helvetica Neue", "メイリオ", Meiryo;
+  --default-font-M-PLUS:'M PLUS 1p', sans-serif, -apple-system, BlinkMacSystemFont,
+  "Helvetica Neue", "メイリオ", Meiryo;
+}
+
 // mixin
 //「tab」「xl」はレイアウト調整用
 $breakpoints: (
@@ -112,6 +121,7 @@ $viewport: 768;
   margin: auto;
   margin-top: 16px;
   margin-bottom: 16px;
+  margin-bottom: 24px;
   @include mq(pc) {
     margin-bottom: 24px;
   }
@@ -173,5 +183,5 @@ $viewport: 768;
 }
 
 @mixin small-uppercase() {
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }

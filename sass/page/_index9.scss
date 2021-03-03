@@ -1,4 +1,7 @@
 .fig {
+  /*   margin: 0 calc(50% - 50vw);
+  padding: 24px calc(50vw - 50% + -1px);
+  width: 100vw; */
   max-width: initial;
   margin-top:50px;
   background-color: $color-g;
@@ -7,34 +10,14 @@
 /*     margin-bottom: 54px; */
   }
   .fig-col-2 {
-    display: grid;
-    gap: 10px;
     text-align: center;
     @include mq(pc) {
+      display: grid;
       max-width: 800px;
       margin: auto;
-
+      gap: 10px;
       justify-content: center;
       grid-template-columns:1fr 1fr;
-    }
-  }
-  .fig-body{
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: 1.2fr 1fr;
-    align-items: center;
-    background-image: url(/images/fig01.jpg);
-    background: no-repeat;
-    background-position: center;
-    background-size:cover;
-    height: 100%;
-    overflow: hidden;
-    height: 105px;
-    @include mq(pc) {
-      background-size: contain;
-      }
-    p{
-      margin-bottom: auto;
     }
   }
 }
@@ -44,19 +27,17 @@
   background-color: $color-w
 }
 
-.calendarArea,.index_width,.facility,.summary,.calendar-body,.calendar,.googleMap{
+.calendarArea,.index_width,.facilit,.summary,.googleMap{
   margin-top:50px;
   @include mq(pc) {
     margin-top:100px;
   }
 }
 
-.medical-body td{
-  padding: 3px;
-}
-
 .googleMap{
   height: 347px;
+  background-image: url(/images/texture/texture-wood.jpg);
+  background: repeat;
   margin-top: initial;
   padding-top: 100px;
   @include mq(pc) {

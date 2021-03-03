@@ -18,82 +18,94 @@
 
 <body>
   <header>
-    <div id="header_inner">
+    <div class="header-inner">
       <div class="logo">
         <p>△△駅から徒歩□分｜頼れる地域の歯科医院</p>
         <h1 class="logo">
-          <a href="index.html"><img src="/images/rogo.png" alt="logo"></a>
+          <a href="index.html">
+            <picture>
+            <source media="(max-width: 768x)" srcset="images/rogoC_sp.png">    
+            <source media="(min-width:769px)" srcset="images/rogoC.png">
+            <img src="images/rogo_sp.png" alt="ロゴ" class="shape">            
+            </picture></a> 
         </h1>
-
-
       </div>
 
-      <div class="reservation">
+      <div class="reservation sp-only">
         <span><a href="reservation.html">予約制</a></span>
-
-        <a href="tel:置換電話番号">
+        <a class="a-fa-phone" href="tel:置換電話番号">
           <i class="fas fa-phone fa-2x"></i>
         </a>
       </div>
 
+      <div class="information-body">
+        <div class="reservation pc-only">
+          <span><a href="reservation.html">予約制</a></span>
+        </div>
 
-      <div class="information">
-        <span class="header-none">置換電話番号</span>
-        <span class="header-time">00：00～00：00 / 00：00～00：00</span>
-        <span class="header-holiday">休診［土曜・日曜・祝日］</span>
+        <a class="fa-phone-sp-only" href="tel:置換電話番号">
+          <i class="fas fa-phone fa-2x sp-only"></i>
+        </a>
+
+        <div class="information">
+          <span class="header-none">置換電話番号</span>
+          <span class="header-time">00：00～00：00 / 00：00～00：00</span>
+          <span class="header-holiday">休診［土曜・日曜・祝日］</span>
+        </div>
+        <!--information-->
       </div>
-      <!--information-->
+
+      <div class="gnav">
+        <nav id="global-nav">
+          <ul>
+            <li>
+              <a title="ABOUT" href="/policy.html">当院について</a>
+            </li>
+            <li>
+              <a title="DOCTOR&STAFF" href="/staff.html">院長・スタッフ紹介</a>
+            </li>
+            <li>
+              <a title="CLINIC" href="/facility.html">施設紹介</a>
+            </li>
+            <li>
+              <a title="MEDICAL" href="/medical.html">治療について</a>
+            </li>
+            <li>
+              <a title="ACCESS" href="/access.html">概要・アクセス</a>
+            </li>
+            <li>
+              <a title="CONTACT" href="/reservation.html">予約・お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <!-- header_inner -->
-
-    <div class="gnav">
-      <nav id="global-nav">
-        <ul>
-          <li>
-            <a title="ABOUT" href="/policy.html">当院について</a>
-          </li>
-          <li>
-            <a title="DOCTOR&STAFF" href="/staff.html">院長・スタッフ紹介</a>
-          </li>
-          <li>
-            <a title="CLINIC" href="/facility.html">施設紹介</a>
-          </li>
-          <li>
-            <a title="MEDICAL" href="/medical.html">治療について</a>
-          </li>
-          <li>
-            <a title="ACCESS" href="/access.html">概要・アクセス</a>
-          </li>
-          <li>
-            <a title="CONTACT" href="/reservation.html">予約・お問い合わせ</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
   </header>
 
-
   <div class="mainVisual">
-    <div class="swiper-container swiper1">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image: url(/images/main01.jpg);">
-          <div class="mainVisual-text">
-            <div class="mainVisual-header">
-              <span class="text-big">お口のホームドクター<br> ご家族で通いたくなる歯医者さん</span>
-            </div>   
-          <div class="mainVisual-body">
-              <p>
-                <span class="textSub">大切なご家族皆様に安心して通っていただけるホームドクターを目指しています。
-                  長期的な展望を持って、患者様のお口の健康を守っていくことが当院の目標であり、使命であると思います。お口に関する不安は、まずは当院にご相談ください。</span>
-              </p>
+    <div class="mainVisual-inner">
+      <div class="swiper-container swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(/images/main01.jpg);">
+            <div class="mainVisual-text">
+              <div class="mainVisual-header">
+                <span class="text-big">お口のホームドクター<br> ご家族で通いたくなる歯医者さん</span>
+              </div>   
+            <div class="mainVisual-body">
+                <p>
+                  <span class="textSub">大切なご家族皆様に安心して通っていただけるホームドクターを目指しています。
+                    長期的な展望を持って、患者様のお口の健康を守っていくことが当院の目標であり、使命であると思います。お口に関する不安は、まずは当院にご相談ください。</span>
+                </p>
+              </div>
             </div>
           </div>
+          <!--/swiper-slide-->
         </div>
-        <!--/swiper-slide-->
+        <!--/swiper-wrapper-->
       </div>
-      <!--/swiper-wrapper-->
+      <!--/swiper-container-->
     </div>
-    <!--/swiper-container-->
   </div>
 
   <main>
@@ -1297,65 +1309,65 @@
           <li>都営新宿線神保町駅から徒歩3分</li>
         </ul>
       </div>
-    </section>    
+    </section>
   </main>
 
 
-    <div class="googleMap"><iframe allowfullscreen="" frameborder="0" height="250"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12960.003448031312!2d139.7514924!3d35.7015964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf7ef2d6128d60e6c!2z77yI5qCq77yJ44OI44OD44Kr44K344K544OG44Og44K6!5e0!3m2!1sja!2sjp!4v1528273246581"
-        style="border:0" width="100%"></iframe></div>
+  <div class="googleMap"><iframe allowfullscreen="" frameborder="0" height="250"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12960.003448031312!2d139.7514924!3d35.7015964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf7ef2d6128d60e6c!2z77yI5qCq77yJ44OI44OD44Kr44K344K544OG44Og44K6!5e0!3m2!1sja!2sjp!4v1528273246581"
+      style="border:0" width="100%"></iframe></div>
 
 
-    <footer>
-      <div class="footer_inner">
-        <div class="footer-logo">
-          <p>△△駅から徒歩□分｜頼れる地域の歯科医院</p>
-          <h1 class="logo">
-            <img src="images/footer_rogo.png" alt="logo">
-          </h1>
-        </div>
-        <div class="footer-info">
-          <p class="footer-yoyaku">予約制</p>
-          <i class="fas fa-phone fa-2x"></i>
-          <span class="footer-info-tel">置換電話番号</span>
-        </div>
-
-
-        <div class="footer-info-2">
-          <span class="footer-info-2--address">置換都道府県置換地域置換町名地番</span>
-          <span class="footer-info-2--tel">TEL 置換電話番号</span>
-        </div>
-
-        <div class="footer-info-3">
-          <span class="footer-info-3--time-3">00：00～00：00 / 00：00～00：00</span>
-          <span class="footer-info-3--holiday">休診日 置換休診</span>
-        </div>
+  <footer>
+    <div class="footer_inner">
+      <div class="footer-logo">
+        <p>△△駅から徒歩□分｜頼れる地域の歯科医院</p>
+        <h1 class="logo">
+          <img src="images/footer_rogo.png" alt="logo">
+        </h1>
       </div>
-      <!--header_inner-->
-      <nav class="footer-nav">
-        <ul>
-          <li>
-            <a href="policy.html">当院について</a>
-          </li>
-          <li>
-            <a href="staff.html">院長・スタッフ紹介</a>
-          </li>
-          <li>
-            <a href="facility.html">施設紹介</a>
-          </li>
-          <li>
-            <a href="medical.html">治療について</a>
-          </li>
-          <li>
-            <a href="access.html">概要・アクセス</a>
-          </li>
-          <li>
-            <a href="reservation.html">予約・お問い合わせ</a>
-          </li>
-        </ul>
-      </nav>
-      <small>Copyright (C) 置換医院名</small>
-    </footer>
+      <div class="footer-info">
+        <p class="footer-yoyaku">予約制</p>
+        <i class="fas fa-phone fa-2x"></i>
+        <span class="footer-info-tel">置換電話番号</span>
+      </div>
+
+
+      <div class="footer-info-2">
+        <span class="footer-info-2--address">置換都道府県置換地域置換町名地番</span>
+        <span class="footer-info-2--tel">TEL 置換電話番号</span>
+      </div>
+
+      <div class="footer-info-3">
+        <span class="footer-info-3--time-3">00：00～00：00 / 00：00～00：00</span>
+        <span class="footer-info-3--holiday">休診日 置換休診</span>
+      </div>
+    </div>
+    <!--header_inner-->
+    <nav class="footer-nav">
+      <ul>
+        <li>
+          <a href="policy.html">当院について</a>
+        </li>
+        <li>
+          <a href="staff.html">院長・スタッフ紹介</a>
+        </li>
+        <li>
+          <a href="facility.html">施設紹介</a>
+        </li>
+        <li>
+          <a href="medical.html">治療について</a>
+        </li>
+        <li>
+          <a href="access.html">概要・アクセス</a>
+        </li>
+        <li>
+          <a href="reservation.html">予約・お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+    <small>Copyright (C) 置換医院名</small>
+  </footer>
 
   <script src="/js/swiper.min.js"></script>
   <script src="/js/jquery.1.12.4.js"></script>

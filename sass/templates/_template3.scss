@@ -1,87 +1,150 @@
-.mainVisual {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
+@include mq(pc) {
+  .mainVisual {
+    max-width: 100%;
+  }
+}
+
+.mainVisual-inner {
+  width: 100%;
+  /*   max-width: 1000px; */
+  margin: auto;
+  .swiper-slide {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mainVisual-text  {
+    color: #444;
+    display: table-cell;
+    text-shadow: #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px,
+      #fff 0 0 3px;
+    vertical-align: bottom;
+    height: 50vh;
+    line-height: 1.5;
+    padding: 2rem;
+    @include font-size(12);
     @include mq(pc) {
-      margin-top: 3rem;
-    }
-    .swiper-slide {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    p {
-      color: #444;
       display: table-cell;
-      text-shadow: #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px,
-        #fff 0 0 3px;
       vertical-align: bottom;
-      height: 200px;
-      line-height: 1.5;
-      padding: 2rem;
-      @include font-size(12);
-      @include mq(pc) {
-        display: table-cell;
-        vertical-align: bottom;
-        height: 500px;
-        @include font-size(25);
-      }
+      height: 800px;
+      @include font-size(25);
     }
-    .textSub {
-      @include mq(pc) {
-        @include font-size(18);
-      }
+  }
+  .mainVisual-header,
+  .mainVisual-body {
+    padding:20px;
+    background: #ffffff96;
+    width: 100%;
+    @include mq(pc) {
+    width: 80%;
+    margin: auto;
+    }
+  }
+  .mainVisual-header{
+    letter-spacing: 10px;
+/*     border-top: 2px solid $color-main;
+ */    padding-bottom: initial;
+  }
+  p {
+    line-height: initial;
+    margin-bottom: initial;
+  }
+  .textSub {
+    @include mq(pc) {
+      @include font-size(18);
     }
   }
 
-  .catchcopy {
+  .swiper-slide{
+    height: 50vh;
     @include mq(pc) {
-      padding-top: 2rem;
-      max-width: 800px;
+      height: 80rem;
     }
-    h2 {
-      font-weight: 600;
-      @include mq(pc) {
-        text-align: left;
-      }
+  }
+}
+
+.catchcopy {
+  @include mq(pc) {
+    padding-top: 2rem;
+    max-width: 800px;
+  }
+  h2 {
+    font-weight: 600;
+    @include mq(pc) {
+      text-align: left;
     }
-    a {
-      background-color: $color-main;
-      @include border-radius(25);
-      color: $color-w;
+  }
+  a {
+    background-color: $color-main;
+    @include border-radius(25);
+    color: $color-w;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px 0 5px;
+    text-align: center;
+    max-width: 170px;
+  }
+}
+
+.info {
+  margin-top: 50px;
+  @include mq(pc) {
+    margin-top: 100px;
+  }
+  .info-inner {
+    margin: auto;
+    @include mq(pc) {
+      display: grid;
+      grid-auto-rows: auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+      max-width: 1000px;
+    }
+  }
+  .info-body {
+    display: table;
+    margin: auto;
+  }
+
+  p {
+    max-width: 500px;
+  }
+}
+
+.popup-content {
+  padding-top: 0;
+  .popup-image {
+    span {
+      border-bottom: solid 1px $color-main;
       display: block;
-      margin: auto;
-      margin-top: 20px;
-      padding: 5px 0 5px;
-      text-align: center;
-      width: 150px;
+      margin: 3% 0;
+      padding: 0 0 1% 1%;
     }
   }
-  
-  .info {
-      h3{
-        @include font-size(18);
-      }
-    @include mq(pc) {
-      margin-top: 54px;
+}
+
+.summary-body {
+  .summary {
+    border-top: 1px solid $color-main;
+    color:$color-main;
+    line-height: 1.8;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 10px 0 0;
+    width: 100%;
+    dt {
+      float: left;
+      margin: 0;
+      padding: 0 0 0 0.5rem;
+      width: 7em;
     }
-    .info-inner {
-      margin: auto;
-      @include mq(pc) {
-        display: grid;
-        grid-auto-rows: auto;
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width: 1000px;
-      }
-    }
-    .info-body {
-      display: table;
-      margin: auto;
-      background: $color-sub;
-      height: 100%;
-    }
-  
-    p {
-      max-width: 500px;
+    dd {
+      border-bottom: 1px solid $color-main;
+      color: $color-b;
+      margin: 0 0 1rem;
+      padding: 0 5px 10px 7em;
+      position: relative;
+      text-align: left;
     }
   }
+}

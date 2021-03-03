@@ -1,0 +1,154 @@
+.mainVisual {
+  width: 100%;
+  /*     max-width: 1000px; */
+  margin: auto;
+  @include mq(pc) {
+    /*       margin-top: 3rem; */
+  }
+  .swiper-slide {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mainVisual-text {
+    max-width: 700px;
+    color: $color-mainVisual-text;
+    display: table-cell;
+    text-shadow: #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px,
+      #fff 0 0 3px;
+    vertical-align: bottom;
+    height: 400px;
+    line-height: 1.5;
+    padding: 2rem;
+    @include font-size(12);
+    @include mq(pc) {
+      display: table-cell;
+      vertical-align: bottom;
+      height: 700px;
+      @include font-size(25);
+    }
+  }
+  .mainVisual-header,
+  .mainVisual-body {
+    padding:20px;
+    background: #ffffff96;
+  }
+  .mainVisual-header{
+    letter-spacing: 10px;
+    border-top: 2px solid $color-main;
+    padding-bottom: initial;
+  }
+  p {
+    line-height: initial;
+    margin-bottom: initial;
+  }
+  .textSub {
+    @include mq(pc) {
+      @include font-size(18);
+    }
+  }
+}
+
+.catchcopy {
+  @include mq(pc) {
+    max-width: initial;
+    padding: initial;
+    padding-bottom: 30px;
+  }
+  border-top: 5px solid $color-w;
+  border-bottom: 5px solid $color-w;
+  .catchcopy-inner {
+    @include mq(pc) {
+      padding-top: 2rem;
+      margin: auto;
+      max-width: 1000px;
+    }
+  }
+  h2 {
+    @include mq(pc) {
+      text-align: left;
+    }
+  }
+  a {
+    background-color: $color-main;
+    color: $color-w;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 0 10px;
+    text-align: center;
+    max-width: 400px;
+    font-family: $M-PLUS;
+    @include border-radius(50);
+    &:hover {
+      @include hover(hovercolorSecondary);
+    }
+  }
+}
+
+.texture {
+  background-image: url(/images/texture/texture-wood.jpg);
+  background: repeat;
+}
+
+.info {
+  padding-top: 50px;
+  h3 {
+    color: $color-b;
+    @include font-size(18);
+  }
+  @include mq(pc) {
+    padding-top: 100px;
+  }
+  .info-inner {
+    margin: auto;
+    @include mq(pc) {
+      display: grid;
+      grid-auto-rows: auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 1000px;
+    }
+  }
+  .info-body {
+    display: table;
+    margin: auto;
+    height: 100%;
+    padding-bottom: 40px;
+    a {
+      background-color: $color-main;
+      color: $color-w;
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      max-width: 200px;
+      padding: 5px 0 5px;
+      text-align: center;
+      font-family: $M-PLUS;
+      @include border-radius(50);
+    }
+  }
+
+  p {
+    max-width: 500px;
+    padding: 0 30px;
+    line-height: initial;
+  }
+}
+
+.news {
+  margin-top: 50px;
+  @include mq(pc) {
+    margin-top: 100px;
+  }
+}
+
+.news-list--item dd {
+  padding: 0 5px 10px 15em;
+  @include mq(pc) {
+  padding: 0 5px 10px 14em;
+  }
+}
+
+.cat {
+  left: 13rem;
+}

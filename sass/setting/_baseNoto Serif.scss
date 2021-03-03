@@ -179,9 +179,6 @@ a {
   @include hover(hoverOpacity);
 }
 
-main {
-}
-
 h2:first-of-type {
   @include h2-space-first;
 }
@@ -199,9 +196,7 @@ h3 {
   @include font-size(26);
   font-weight: 700;
   text-align: center;
-  @include mq(pc) {
-    /*     @include h3-space; */
-  }
+  @include h3-space;
 }
 
 h4 {

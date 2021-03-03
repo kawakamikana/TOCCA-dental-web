@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  src: local("Noto Sans CJK JP"),
+    url(http://fonts.googleapis.com/earlyaccess/notosansjp.css) format("woff");
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 16px x 0.625 = 10px(=1rem) */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* 16px */
+  font-family:var(--default-font-sans);
+  font-weight: bold;
+  @include font-size(16);
+  line-height: 1.8;
+  min-height: 100%;
+  text-size-adjust: 100%;
+  @include small-uppercase();
+  @include mq() {
+    @include font-size(15);
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  @include hover(hoverOpacity);
+}
+
+h2:first-of-type {
+  @include h2-space-first;
+}
+
+h2 {
+  @include mq(pc) {
+    text-align: center;
+  }
+  text-align: left;
+  @include h2-space;
+}
+
+h3 {
+  color: $color-main;
+  @include font-size(26);
+  font-weight: 700;
+  text-align: center;
+  @include h3-space;
+}
+
+h4 {
+  color: $color-main;
+  text-align: center;
+  @include h4-space;
+}
+
+p {
+  @include p-space;
+}
+
+section {
+  padding: $size-base * 2;
+  @include mq(pc) {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+.layout {
+  padding: $size-base * 2;
+  @include mq(pc) {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+.title {
+  padding: $size-base * 1;
+}
+
+/*subpage*/
+.h2-title {
+  border-bottom: solid 3px $color-main;
+  color: $color-main;
+  @include font-size(30);
+  margin-bottom: 0;
+  font-weight: bold;
+  margin-bottom: 0 !important;
+  @include mq(pc) {
+    text-align: left;
+    padding-top: 0 !important;
+  }
+}
+
+.h3-title {
+  background: transparent;
+  border-left: solid 5px $color-main;
+  @include font-size(24);
+  margin: 0.5rem 0 1rem 0;
+  padding: 0 0 0 0.5em;
+  text-align: left;
+  margin-top: 0;
+  color: $color-gb;
+}
+
+//本文（太字）
+.text-bold {
+  font-weight: bold;
+}
+
+//本文（大）
+.text-big {
+  @include font-size(18);
+  @include mq(pc) {
+    @include font-size(20);
+  }
+}
+
+//本文（大）
+.large {
+  @include font-size(15);
+  @include mq(pc) {
+    @include font-size(16);
+  }
+}
+
+//テキスト（green）
+.text-green {
+  color: $color-sub;
+}
+
+//テキスト（orange）
+.text-orange {
+  color: $color-main;
+}
