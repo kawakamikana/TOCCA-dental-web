@@ -1,44 +1,49 @@
 //news
 .news-list--item {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  justify-content: center;
+  margin: auto;
+  max-width: 800px;
   border-top: 1px solid $color-main;
-  color: $color-main;
-  line-height: 1.8;
-  margin: 0.5rem 0 0.5rem 0;
-  padding: 10px 0 0;
-  width: 100%;
   @include mq(pc) {
     margin: 0 auto 54px;
     width: 100%;
-    max-width: 600px;
   }
   dt {
-    float: left;
-    margin: 0;
-    padding: 0 0 0 0.5rem;
+    padding: 10px;
     width: 7em;
+    border-bottom: 1px solid $color-main;
   }
   dd {
+    padding: 10px;
+    text-align: left;
+    display: grid;
+    align-items: baseline;
+    grid-template-columns: 80px 1fr;
     border-bottom: 1px solid $color-main;
     color: $color-b;
-    margin: 0 0 1rem;
-    padding: 0 5px 10px 13em;
-    position: relative;
-    text-align: left;
+    gap: 20px;
+    @include mq(pc) {
+      align-items: center;
+    }
+  }
+}
+
+.news-details {
+  padding: 10px 0 10px 0;
+  ul {
+    padding: 20px 0;
   }
 }
 
 .cat {
+  text-align: center;
   background: $color-main;
   @include border-radius(25);
   color: $color-w;
   display: block;
   @include font-size(12);
-  left: 11rem;
-  margin: 0;
-  padding: 0 1em;
-  position: absolute;
-  text-align: center;
-  top: 2px;
 }
 
 //カレンダー

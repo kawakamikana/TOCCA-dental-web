@@ -165,6 +165,7 @@ header {
   }
 }
 
+
 .sp-only {
   @include mq(pc) {
     display: none;
@@ -300,6 +301,9 @@ header {
   @include mq(pc) {
     color: $color-nav;
   }
+  @include mq(pc) {
+    @include hover(hovercolorPrimary);
+  }
 }
 
 #global-nav li {
@@ -355,8 +359,14 @@ footer {
     grid-template-columns: 1fr;
     padding: 0 16px 0;
     .footer-logo p {
+      margin-bottom: 15px;
       padding-top: 15px;
-      margin-bottom: 0;
+    }
+    .footer-info-2,.footer-info-3{
+      display: none
+    }
+    .footer-info-tel{
+      @include font-size(26);
     }
   }
 
@@ -454,7 +464,7 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       justify-items: inherit;
-      max-width: 980px;
+      max-width: 1100px;
       margin: auto;
     }
     li > a {

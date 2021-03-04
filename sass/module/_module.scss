@@ -55,7 +55,7 @@ $viewport: 768;
     }
   }
 
-  //$styleがindexhovercolorPrimaryだった時　hover時white＋border
+  //$styleがbuttonhovercolorSecondaryだった時　hover時white＋border
   @else if $style == buttonhovercolorSecondary {
     &:hover {
       background: $color-w;
@@ -73,6 +73,14 @@ $viewport: 768;
       transition: 0.3s;
     }
   }
+
+    //$styleがnavhovercolorSecondaryだった時　navhover背景色がcolor-sub
+    @else if $style == navhovercolorSecondary {
+      &:hover {
+        color: $color-sub;
+        transition: 0.3s;
+      }
+    }
 
   //$styleがhoverOpacityだった時　hoverがopacity
   @else if $style == hoverOpacity {
