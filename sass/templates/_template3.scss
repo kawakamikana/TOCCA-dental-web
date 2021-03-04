@@ -6,7 +6,6 @@
 
 .mainVisual-inner {
   width: 100%;
-  /*   max-width: 1000px; */
   margin: auto;
   .swiper-slide {
     background-position: center;
@@ -26,7 +25,8 @@
     @include mq(pc) {
       display: table-cell;
       vertical-align: bottom;
-      height: 800px;
+      height:30em;
+/*       height: 800px; */
       @include font-size(25);
     }
   }
@@ -42,8 +42,7 @@
   }
   .mainVisual-header{
     letter-spacing: 10px;
-/*     border-top: 2px solid $color-main;
- */    padding-bottom: initial;
+    padding-bottom: initial;
   }
   p {
     line-height: initial;
@@ -60,6 +59,9 @@
     @include mq(pc) {
       height: 80rem;
     }
+  }
+  .swiper-container{
+    height: 100%!important;
   }
 }
 

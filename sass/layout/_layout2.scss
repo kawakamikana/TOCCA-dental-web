@@ -270,6 +270,9 @@ header {
     /*   grid-template-columns: repeat(6, 170px); */
     justify-content: center;
   }
+  @include mq(xl) {
+    gap: 10px;
+  }
 }
 
 #global-nav ul li {
@@ -297,6 +300,9 @@ header {
   @include mq(pc) {
     color: $color-nav;
     padding: 0;
+  }
+  @include mq(pc) {
+    @include hover(hovercolorPrimary);
   }
 }
 

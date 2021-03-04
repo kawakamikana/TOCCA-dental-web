@@ -49,6 +49,15 @@ $viewport: 768;
   //$styleがhovercolorPrimaryだった時　hover背景色がwhite
   @else if $style == hovercolorPrimary {
     &:hover {
+/*       background: $color-w; */
+      color: $color-main;
+      transition: 0.3s;
+    }
+  }
+
+  //$styleがindexhovercolorPrimaryだった時　hover時white＋border
+  @else if $style == buttonhovercolorSecondary {
+    &:hover {
       background: $color-w;
       color: $color-main;
       transition: 0.3s;

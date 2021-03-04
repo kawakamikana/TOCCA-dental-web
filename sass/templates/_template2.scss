@@ -1,41 +1,42 @@
-
-
-.mainVisual{
+.mainVisual {
+  position: relative;
   @include mq(pc) {
-  background: $color-mbg;
-  display: grid;
-  grid-auto-rows: auto;
-  grid-template-columns: 500px 1fr;
-  @include mq(xl) {
-    grid-template-columns: 1fr 1fr;
-  }
+    background: $color-mbg;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 500px 1fr;
+    @include mq(xl) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 
-.mainVisual-inner{
+.mainVisual-inner {
   width: 100%;
-  max-width:900px;
+  max-width: 900px;
   margin-left: auto;
   order: 2;
   @include mq(xl) {
-    max-width:1000px;
+    max-width: 1000px;
   }
   .swiper-slide {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width:100%!important;
-    max-width:900px!important;
+    width: 100% !important;
+    max-width: 900px !important;
     @include mq(xl) {
-      width:100%!important;
-      max-width:1000px!important;
-/*       margin-right:initial!important; */
+      width: 100% !important;
+      max-width: 1000px !important;
     }
   }
 }
 
-.mainVisual-text{
-  color:$color-mainVisual-text;
+.mainVisual-text {
+  position: absolute;
+  bottom: 22%;
+  z-index: 2;
+  color: $color-mainVisual-text;
   display: table-cell;
   text-shadow: #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px,
     #fff 0 0 3px;
@@ -43,32 +44,32 @@
   height: 200px;
   line-height: 1.5;
   padding: 2rem;
-  @include font-size(12);
+  @include font-size(16);
   @include mq(pc) {
+    position: static;
     order: 1;
     display: table-cell;
     vertical-align: bottom;
     @include font-size(25);
   }
-  p{
+  p {
     margin-bottom: initial;
   }
   @include mq(xl) {
-  .text-big{
-    max-width: 77%;
-    margin-left: auto;
-    display: block;
-    padding-bottom: 10px;
-  }
+    .header-text-big {
+      @include font-size(30);
+      margin-left: auto;
+      display: block;
+      padding-bottom: 10px;
+    }
   }
   @include mq(xl) {
     padding-left: 15rem;
   }
 }
-.mainVisual-body{
+.mainVisual-body {
   @include mq(xl) {
-  max-width: 77%;
-  margin-left: auto;
+    margin-left: auto;
   }
 }
 .textSub {
@@ -99,16 +100,14 @@
     text-align: center;
     max-width: 170px;
     border: 1px solid $color-main;
-    &:hover{
-      @include hover(hovercolorPrimary);
-    }
+    @include hover(buttonhovercolorSecondary);
   }
 }
 
 .info {
-  margin-top:50px;
+  margin-top: 50px;
   @include mq(pc) {
-    margin-top:100px;
+    margin-top: 100px;
   }
   .info-inner {
     margin: auto;
